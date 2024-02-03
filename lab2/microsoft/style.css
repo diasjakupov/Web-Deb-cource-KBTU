@@ -1,0 +1,133 @@
+body{
+    min-width: 100vh;
+    min-height: 100vh;
+}
+.contentCenterVertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contentCenterHorizontal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container-sm{
+    width: 55%;
+}
+.container{
+    width: 90%;
+}
+.container-fluid{
+    width: 100%;
+}
+.greeting-bg{
+    width: 100%;
+}
+.greeting-content{
+    position: relative;
+}
+.greeting-section{
+    position: absolute;
+    width: 35%;
+    top: 25%;
+    left: 15%;
+    color: white;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.col-b{
+    flex-basis: 0;
+    flex-grow: 1.5;
+    max-width: 100%;
+}
+.nav-item-icon{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+.logo{
+    width: 150px;
+    height: 30px;
+    margin-right: 16px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.text-icon-button{
+    text-align: center;
+}
+button{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    margin-right: 10px;
+}
+.greeting-button{
+    padding: 8px 12px 8px 16px;
+}
+.button-active{
+    color: white;
+    background-color: black;
+}
+.white-svg{
+    filter: invert(90%) sepia(0%) saturate(7459%) hue-rotate(109deg) brightness(113%) contrast(111%);
+}
+.button-inactive{
+    color: black;
+    background-color: transparent;
+}
+ul.horizontal-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.horizontal-list li{
+    color: gray;
+    float: left;
+    padding: 16px 32px 16px 0px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.card-image{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.card-text{
+    display: inline-block;
+}
+.link{
+    cursor: pointer;
+    color: blue;
+    padding: 0%;
+    filter: invert(9%) sepia(100%) saturate(7449%) hue-rotate(248deg) brightness(90%) contrast(144%);
+}
+.p-0{
+    padding: 0;
+}
+.m-0{
+    margin: 0;
+}
