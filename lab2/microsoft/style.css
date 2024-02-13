@@ -48,6 +48,11 @@ body{
     align-items: center;
     width: 100%;
 }
+.contentEnd{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
 .col{
     flex-basis: 0;
     flex-grow: 1;
