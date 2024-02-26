@@ -1,4 +1,4 @@
-.product-catalog {
+.row {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
@@ -50,6 +50,19 @@
 
 .share-btn {
   background-color: #4caf50;
+}
+.delete-btn {
+  background-color: red;
+}
+.like-btn {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+.dislike-btn {
+  background-color: blue;
+  border: none;
+  color: white
 }
 
 .notify-btn {
