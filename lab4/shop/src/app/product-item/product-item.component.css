@@ -1,0 +1,61 @@
+.product-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  .product-rating,
+  .product-price {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .product-actions {
+    margin-top: auto;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn:last-child {
+    margin-right: 0;
+  }
+  
+  .share-btn {
+    background-color: #4caf50;
+  }
+  .delete-btn {
+    background-color: red;
+  }
+  .like-btn {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+  }
+  .dislike-btn {
+    background-color: blue;
+    border: none;
+    color: white
+  }
+  

@@ -20,30 +20,18 @@ export class ProductListComponent {
     this.products = initProducts.filter( product => product.category_id === categoryIdFromRoute)
   }
 
-  share(link: string) {
-    const shareMessage = `Я делюсь с тобой ссылкой на крутой продукт:  ${link}`;
-    const telegramLink = `https://t.me/share/url?url=${encodeURIComponent(shareMessage)}`;
-    window.location.href = telegramLink;
-  }
 
-  delete(id: number){
+  onDelete(id: number){
     this.products = this.products.filter(product => product.id !== id)
   }
 
-  manageLike(id: number){
+  onLikePress(id: number){
     var product = this.products.find(product => product.id === id)
     if (product == undefined){
       alert("Something when wrong")
     }else{
       product.likeCount = (product?.likeCount ?? 0) + 1
     }
-  }
-  onNotify() {
-    window.alert('You will be notified when the product goes on sale');
-  }
-
-  getStars(rating: number): string {
-    return '★'.repeat(Math.floor(rating)) + '☆'.repeat(5 - Math.floor(rating));
   }
 }
 

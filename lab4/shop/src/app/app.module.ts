@@ -9,6 +9,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { ProductItemComponent } from './product-item/product-item.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { CategoriesComponent } from './categories/categories.component';
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
+    ProductItemComponent,
     CategoriesComponent
   ],
   bootstrap: [
