@@ -17,6 +17,16 @@ export class CompanyListComponent {
   constructor(private service: CompanyAPIServiceService){}
 
   ngOnInit(){
+    this.loadData()
+  }
+
+  loadData(){
     this.service.getAllCompanies().subscribe((data)=>this.companies = data)
+  }
+
+  deleteCompany(id: number){
+    this.service.delete(id).subscribe(()=>{
+      this.loadData()
+    })
   }
 }
